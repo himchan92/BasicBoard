@@ -14,4 +14,7 @@ public interface BoardMapper {
 	
 	//조회
 	public BoardVO getPage(int bno);
+	
+	//수정
+	public int modify(BoardVO board);
 }

@@ -1,18 +1,25 @@
 package com.vam.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class BoardVO {
-	private int bno; //번호
+
+	/* 게시판 번호 */
+	private int bno;
 	
-	private String title; //제목
+	/* 게시판 제목 */
+	private String title;
 	
-	private String content; //내용
+	/* 게시판 내용 */
+	private String content;
 	
-	private String writer; //작가
+	/* 게시판 작가 */
+	private String writer;
 	
+	/* 등록 날짜 */
 	private Date regdate;
 	
+	/* 수정 날짜 */
 	private Date updateDate;
 
 	public int getBno() {
@@ -69,6 +76,5 @@ public class BoardVO {
 				+ regdate + ", updateDate=" + updateDate + "]";
 	}
 
-	
 	
 }

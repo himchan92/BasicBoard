@@ -32,4 +32,10 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.getPage(bno);
 	}
 
+	@Override
+	public int modify(BoardVO board) {
+		// TODO Auto-generated method stub
+		return mapper.modify(board);
+	}
+
 }

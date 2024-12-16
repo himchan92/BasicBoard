@@ -14,4 +14,7 @@ public interface BoardService {
 	
 	//단건 조회
 	public BoardVO getPage(int bno);
+	
+	//수정
+	public int modify(BoardVO board);
 }

@@ -51,4 +51,19 @@ public class BoardController {
 	public void boardGetPageGET(int bno, Model model) {
 		model.addAttribute("pageInfo", bservice.getPage(bno));
 	}
+	
+	@GetMapping("/modify")
+	public void boardModifyGET(int bno, Model model) {
+		model.addAttribute("pageInfo", bservice.getPage(bno));
+	}
+	
+	@PostMapping("/modify")
+	public String boardModifyPOST(BoardVO board, RedirectAttributes rttr) {
+		bservice.modify(board);
+		
+		rttr.addFlashAttribute("result", "modify success");
+		
+		return "redirect:/board/list";
+	}
+	
 }
