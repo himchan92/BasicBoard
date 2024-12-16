@@ -28,5 +28,10 @@
 			updatedate = sysdate 
 		where bno = #{bno}
 	</update>
+	
+	<delete id="delete">
+		delete from vam_board
+		where bno = #{bno}
+	</delete>
 
 </mapper>
