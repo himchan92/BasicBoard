@@ -33,4 +33,11 @@ public class BoardServiceTests {
 	public void testGetList() {
 		service.getList().forEach(board -> log.info("" + board));
 	}
+	
+	@Test
+	public void testGETPage() {
+		int bno = 6;
+		
+		log.info("" + service.getPage(bno));
+	}
 }

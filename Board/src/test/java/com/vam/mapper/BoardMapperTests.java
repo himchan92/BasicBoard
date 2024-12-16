@@ -28,5 +28,13 @@ public class BoardMapperTests {
 		
 		mapper.enroll(vo);
 	}
+	
+	@Test
+	public void testGETPage() {
+		//실제 존재 페이지
+		int bno = 6;
+		
+		log.info("" + mapper.getPage(bno));
+	}
 
 }

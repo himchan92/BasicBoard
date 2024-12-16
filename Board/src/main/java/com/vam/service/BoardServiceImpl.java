@@ -26,4 +26,10 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.getList();
 	}
 
+	@Override
+	public BoardVO getPage(int bno) {
+		// TODO Auto-generated method stub
+		return mapper.getPage(bno);
+	}
+
 }

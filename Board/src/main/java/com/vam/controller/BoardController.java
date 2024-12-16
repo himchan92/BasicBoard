@@ -46,4 +46,9 @@ public class BoardController {
 		
 		return "redirect:/board/list";
 	}
+	
+	@GetMapping("/get")
+	public void boardGetPageGET(int bno, Model model) {
+		model.addAttribute("pageInfo", bservice.getPage(bno));
+	}
 }
