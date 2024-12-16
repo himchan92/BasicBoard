@@ -20,8 +20,8 @@ public class JDBCTest {
 	public void testConnectino() {
 		try(Connection con = DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:orcl",
-				"SCOTT",
-				"tiger")) {
+				"C##SCOTT",
+				"TIGER")) {
 			System.out.println(con);
 		} catch (Exception e) {
 			fail(e.getMessage());

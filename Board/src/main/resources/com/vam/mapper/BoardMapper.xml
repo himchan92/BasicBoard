@@ -10,5 +10,10 @@
 		VALUES
 		(#{title}, #{content}, #{writer})
 	</insert>
+	
+	<!-- 목록 -->
+	<select id="getList" resultType="com.vam.model.BoardVO">
+		select * from vam_board
+	</select>
 
 </mapper>
