@@ -21,7 +21,7 @@ public class BoardMapperTests {
 	@Test
 	public void testEnroll() {
 		
-		BoardVO vo = new BoardVO();
+		BoardVO vo = new BoardVO();		
 		vo.setTitle("mapper test");
 		vo.setContent("mapper test");
 		vo.setWriter("mapper test");
