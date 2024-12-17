@@ -2,11 +2,14 @@ package com.vam.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.vam.model.BoardVO;
+import com.vam.service.BoardServiceTests;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,6 +17,8 @@ import lombok.extern.slf4j.Slf4j;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Slf4j
 public class BoardMapperTests {
+	
+	private static final Logger log = LoggerFactory.getLogger(BoardServiceTests.class);
 	
 	@Autowired
 	private BoardMapper mapper;
